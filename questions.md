@@ -41,11 +41,25 @@ For this specific problem, the two-pointer technique is best. But if we were to 
 
 ## External Merge Sort?
 
-## k-way merge algorithm?
-
 ## Optimizing disk I/O by efficiently managing buffer sizes and minimizing the number of read and write operations?
 
 ## parallel processing?
 
+
+## why O(n) + O(n-1) which is asymptotically equivalent to O(n)
+
+When analyzing the time complexity of an algorithm, the "big O" notation \( O(f(n)) \) is used to describe an upper bound on the growth rate of the function. The constant factors and lower order terms are typically omitted because they become increasingly irrelevant as \( n \) grows larger.
+
+Consider the expression \( O(n) + O(n-1) \):
+
+1. \( O(n) \) describes a function that grows linearly with \( n \). The highest order term here is \( n \).
+
+2. \( O(n-1) \) also describes a function that grows linearly with \( n \), despite the subtraction of 1. The subtraction of a constant doesn't affect the growth rate in a significant way, so the highest order term is still \( n \).
+
+When you add these two together, the dominant term remains \( n \). Therefore, the combined time complexity is still on the order of \( n \).
+
+So, \( O(n) + O(n-1) \) is asymptotically equivalent to \( O(n) \).
+
+Another way to think about it: As \( n \) gets very large, the difference between \( n \) and \( n-1 \) becomes increasingly insignificant. For example, when \( n = 1,000,000 \), \( n-1 = 999,999 \), and the difference between these two numbers is trivial in the context of big O notation. The most significant factor in determining the growth rate is the \( n \) term itself.
 
 
