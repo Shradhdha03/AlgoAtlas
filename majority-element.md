@@ -21,15 +21,45 @@ Given an array `nums` of size `n`, the task is to find and return the majority e
 **Solution Explanation:**
 The solution provides three distinct approaches to find the majority element:
 
-1. **Moore’s Voting Algorithm**: This algorithm works by choosing a candidate element and then counting its occurrences. If a different element is found, the count is decremented. This continues until the count reaches zero, at which point a new candidate is selected. After iterating through the list, we validate the candidate by ensuring it appears more than `⌊n / 2⌋` times.
+1. **Brute Force:**
+   - For each element, count how many times it appears.
+   - If it appears more than ⌊n/2⌋ times, return it.
+   - This is an O(n^2) approach due to the nested loop (one for choosing the element, one for counting).
 
-2. **Sorting**: By sorting the array, the majority element will always be the middle element.
+2. **Sorting:**
+   - Sort the array.
+   - Since the majority element appears more than ⌊n/2⌋ times, it will always be present at the middle index (n/2) of the sorted array.
+   - Time complexity: O(n log n) for sorting.
 
-3. **Hash Map**: This approach involves maintaining a frequency count of each element using a hash map. After iterating through the array, we then identify the majority element by iterating through the hash map.
+3. **HashMap:**
+   - Traverse through the list and maintain a count of each number using a hash map (dictionary).
+   - Return the number with a count greater than ⌊n/2⌋.
+   - Time complexity: O(n) but with additional space complexity for the hash map.
+
+4. **Moore's Voting Algorithm:**
+   - This algorithm works by choosing a candidate element and then counting its occurrences. If a different element is found, the count is decremented. This continues until the count reaches zero, at which point a new candidate is selected. After iterating through the list, we validate the candidate by ensuring it appears more than `⌊n / 2⌋` times.
+   - Traverse through the list to get the candidate for the majority element.
+   - Traverse the list again to verify that the candidate appears more than ⌊n/2⌋ times.
+   - Time complexity: O(n) with constant space.
+
+5. **Divide and Conquer:**
+   - Split the list into two halves.
+   - Find the majority element in both halves (recursively).
+   - Combine the results: the global majority element will be the majority in one of (or both) the halves.
+   - Time complexity: O(n log n).
+
+6. **Randomized Algorithm:**
+   - Randomly pick an element and check if it's the majority.
+   - Due to the probability, the expected number of iterations to find the majority element is constant.
+   - Time complexity: Expected O(n), but it's probabilistic.
+
+7. **Using Python Built-ins:**
+   - Use Python's collections.Counter to count occurrences and return the most common element.
+   - Although this is conceptually similar to the HashMap method, it exploits Python's built-in optimizations.
 
 ```python
 from typing import List
-
+from collections import Counter
 class MajorityElementFinder:
 
     def majorityElementMoore(self, nums: List[int]) -> int:
@@ -86,6 +116,10 @@ class MajorityElementFinder:
         for key, count in number_counts.items():
             if count > len(nums) // 2:
                 return key
+
+   def majorityElementUsingCounter(self,nums: List[int]) -> int:
+      counter = Counter(nums)
+      return counter.most_common(1)[0][0]
 
 ```
 
