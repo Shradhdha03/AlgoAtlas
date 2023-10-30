@@ -20,17 +20,44 @@ Given an array `nums` of `n` integers where `nums[i]` is in the range `[1, n]`, 
 
 #### Solution Explanation:
 
-1. **Cyclic Sort Approach**:
-   The essence of this method is to place each number at its correct position, i.e., `nums[i]` should be `i+1`.
-   - We iterate through the array, and for each number, we find its correct position and swap it.
-   - After sorting, we iterate through the array. If the number at the current index doesn’t match the index, it's a missing number.
+1. **Brute Force Approach**:
+   - For every number from 1 to `n`, check if it exists in the `nums` array.
+   - **Time Complexity**: `O(n^2)` - As for each number from 1 to `n`, we check if it exists in the array.
+   - **Space Complexity**: `O(1)` - Excluding the space required for the output.
 
 2. **Sorting Approach**:
-   - First, we sort the `nums` array.
-   - We then iterate through the sorted array and compare each element with an expected number (starting from 1 and incremented with each iteration). If they don’t match, the expected number is added to the missing numbers list.
+   - First, sort the `nums` array.
+   - Iterate through the sorted array and compare each element with an expected number.
+   - **Time Complexity**: `O(n log n)` - Due to the sorting step.
+   - **Space Complexity**: `O(1)` - Excluding the space required for the output.
 
-3. **Brute Force Approach**:
-   - We simply iterate from 1 to `n` and check if each number exists in `nums`. If not, it’s added to the missing numbers list.
+3. **Hashing Approach**:
+   - Use a hash set to record all the numbers in the `nums` array.
+   - Iterate from 1 to `n` and check for missing numbers in the hash set.
+   - **Time Complexity**: `O(n)` - One pass to populate the hash set, and another to check for missing numbers.
+   - **Space Complexity**: `O(n)` - Due to the use of the hash set.
+
+4. **Cyclic Sort Approach**:
+   - Place each number at its correct position, i.e., `nums[i]` should be `i+1`.
+   - Iterate through the array. If the number at the current index doesn’t match the index, it's a missing number.
+   - **Time Complexity**: `O(n)` - Each element is moved at most once.
+   - **Space Complexity**: `O(1)` - Excluding the space required for the output.
+
+5. **Extra Array Approach**:
+   - Use an additional boolean array of size `n` initialized with `False`.
+   - For each number in `nums`, mark the corresponding index in the boolean array as `True`.
+   - Iterate through the boolean array to find indices that are still `False` - these are the missing numbers.
+   - **Time Complexity**: `O(n)` - One pass to mark the numbers and another to find missing numbers.
+   - **Space Complexity**: `O(n)` - Due to the use of the extra array.
+
+6. **In-place Modification**:
+   - Use the given array itself as a marker.
+   - For each number in `nums`, treat it as an index and mark the number at that index as negative.
+   - In the end, numbers at indices which are positive are the missing numbers.
+   - **Time Complexity**: `O(n)` - One pass to mark numbers and another to collect missing numbers.
+   - **Space Complexity**: `O(1)` - No extra space is used.
+
+---
 
 ```python
 from typing import List
