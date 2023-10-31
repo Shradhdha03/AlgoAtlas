@@ -9,6 +9,7 @@
 
 [Climbing Stairs](climbing-stairs.md) - Easy
 
+[Best Time to Buy and Sell Stock](best-time-to-buy-and-sell-stock.md) - Easy
 ---
 
 [Remove Element from List](remove-element.md) - Easy - Two Pointer
