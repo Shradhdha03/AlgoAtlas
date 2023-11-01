@@ -25,6 +25,16 @@
 
 [Reverse Linked List](reverse-linked-list.md) - Easy
 
+[Palindrome Linked List](palindrome-linked-list.md) - Easy
+
+[Remove Linked List Elements](remove-linked-list-elements.md) - Easy
+
+[Remove Duplicates from Sorted List](remove-duplicates-from-sorted-list.md) - Easy
+
+---
+
+[Merge Two Sorted Lists](merge-two-sorted-lists.md) - Easy
+
 []() - Easy
 
 []() - Easy
@@ -42,6 +52,7 @@
 []() - Easy
 
 ---
+
 [Remove Element from List](remove-element.md) - Easy - Two Pointer
 
 [Squaring a Sorted Array](squaring_a_sorted_array.md) - Easy 
