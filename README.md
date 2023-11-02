@@ -35,9 +35,9 @@
 
 [Merge Two Sorted Lists](merge-two-sorted-lists.md) - Easy
 
-[]() - Easy
+[Binary Search](binary-search.md) - Easy
 
-[]() - Easy
+[Find Smallest Letter Greater Than Target](find-smallest-letter-greater-than-target.md) - Easy
 
 []() - Easy
 
