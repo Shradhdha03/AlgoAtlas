@@ -39,6 +39,16 @@
 
 [Find Smallest Letter Greater Than Target](find-smallest-letter-greater-than-target.md) - Easy
 
+[Average of Levels in Binary Tree](average-of-levels-in-binary-tree.md) - Easy
+
+---
+
+[Minimum Depth of Binary Tree](minimum-depth-of-binary-tree.md) - Easy
+
+[]() - Easy
+
+[]() - Easy
+
 []() - Easy
 
 ---
