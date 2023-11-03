@@ -55,7 +55,7 @@
 
 [Diameter of Binary Tree](diameter-of-binary-tree.md) - Easy
 
-[]() - Easy
+[Merge Two Binary Trees](merge-two-binary-trees.md) - Easy
 
 []() - Easy
 
