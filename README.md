@@ -49,7 +49,7 @@
 
 [Path Sum](path-sum.md) - Easy
 
-[]() - Easy
+[Maximum Depth of Binary Tree](maximum-depth-of-binary-tree.md) - Easy
 
 ---
 
