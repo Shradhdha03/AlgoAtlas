@@ -45,9 +45,9 @@
 
 [Minimum Depth of Binary Tree](minimum-depth-of-binary-tree.md) - Easy
 
-[]() - Easy
+[Same Tree](same-tree.md) - Easy
 
-[]() - Easy
+[Path Sum](path-sum.md) - Easy
 
 []() - Easy
 
