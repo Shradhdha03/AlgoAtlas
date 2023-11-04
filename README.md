@@ -69,11 +69,11 @@
 
 [Backspace String Compare](backspace-string-compare.md) - Easy
 
-[]() - Easy
+[Majority Element](majority-element.md) - Easy
 
 ---
 
-[]() - Easy
+[Convert 1D Array Into 2D Array](convert-1d-array-into-2d-array.md) - Easy
 
 []() - Easy
 
