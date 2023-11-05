@@ -75,18 +75,28 @@
 
 [Convert 1D Array Into 2D Array](convert-1d-array-into-2d-array.md) - Easy
 
-[]() - Easy
+[Move Zeroes](move-zeroes.md) - Easy
 
-[]() - Easy
+[Is Subsequence](is_subsequence.md) - Easy
 
-[]() - Easy
+[Binary Tree Paths](binary-tree-paths.md) - Easy
 
-[]() - Easy
+[Maximum Average Subarray I](maximum-average-subarray-i.md) - Easy
 
 ---
 
-[Remove Element from List](remove-element.md) - Easy - Two Pointer
+[]() - Medium
 
-[Squaring a Sorted Array](squaring_a_sorted_array.md) - Easy 
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+---
+
+[Remove Element from List](remove-element.md) - Easy
 
 [Questions](questions.md)
