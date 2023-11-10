@@ -83,7 +83,19 @@
 
 [Maximum Average Subarray I](maximum-average-subarray-i.md) - Easy
 
----
+---05
+
+[Rotate Image](rotate-image.md) - Medium
+
+[Non-overlapping Intervals](non-overlapping-intervals.md) - Medium
+
+[Kth Smallest Element in a Sorted Matrix](kth-smallest-element-in-a-sorted-matrix.md) - Medium
+
+[Permutation in String](permutation-in-string.md) - Medium
+
+[Maximum Product Subarray](maximum-product-subarray.md) - Medium
+
+---06
 
 []() - Medium
 
@@ -95,7 +107,53 @@
 
 []() - Medium
 
----
+---07
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+---08
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+---09
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+---10
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
+
+[]() - Medium
 
 [Remove Element from List](remove-element.md) - Easy
 
